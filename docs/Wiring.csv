@@ -1,0 +1,20 @@
+Komponen,Pin_Komponen,Pin_ESP32,Keterangan
+Sensor DHT11,Data (OUT),15,Sensor Suhu & Kelembapan [cite: 2]
+Sensor DHT11,VCC,3.3V / 5V,Daya Sensor
+Sensor DHT11,GND,GND,Ground
+Sensor TDS,Analog OUT,36,Sensor Kualitas Air [cite: 3]
+Sensor TDS,VCC,3.3V,Aman untuk batas maksimal ADC ESP32
+Sensor TDS,GND,GND,Ground
+Relay 1 (Fogger),IN 1,4,Modul Relay Aktif Low / Low Trigger [cite: 3, 11]
+Relay 2 (Grow Light),IN 2,5,Modul Relay Aktif Low / Low Trigger [cite: 4, 11]
+Modul Relay,VCC,5V (VIN) / Eksternal,Gunakan power supply eksternal jika beban fogger berat
+Modul Relay,GND,GND,Ground
+LED RGB (NeoPixel),DIN,19,LED Strip WS2812B (8 LED) [cite: 2]
+LED RGB (NeoPixel),VCC,5V (VIN) / Eksternal,Sebaiknya gunakan power supply eksternal
+LED RGB (NeoPixel),GND,GND,Ground
+Modul RTC DS3231,SDA,21,Pin Default I2C ESP32
+Modul RTC DS3231,SCL,22,Pin Default I2C ESP32
+Modul RTC DS3231,VCC,3.3V / 5V,Daya RTC
+Modul RTC DS3231,GND,GND,Ground
+LED Indikator BT,Positif,2,Menyala saat ada koneksi Bluetooth / Client [cite: 4, 32]
+LED Indikator BT,Negatif,GND,Ground
