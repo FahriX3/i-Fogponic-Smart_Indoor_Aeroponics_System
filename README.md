@@ -9,91 +9,91 @@
 # 🌿 i-Fogponic
 ### Smart Indoor Aeroponics System
 
-*Sistem aeroponik dalam ruangan berbasis IoT dengan monitoring & kontrol via Bluetooth*
+*An IoT-based indoor aeroponics system with real-time monitoring & Bluetooth control*
 
-[📥 Download Rilis Terbaru](https://github.com/FahriX3/i-Fogponic-Smart_Indoor_Aeroponics_System/releases/tag/v2.0.0-flutter) &nbsp;·&nbsp;
-[📄 Dokumentasi](./docs/) &nbsp;·&nbsp;
+[📥 Download Latest Release](https://github.com/FahriX3/i-Fogponic-Smart_Indoor_Aeroponics_System/releases/tag/v2.0.0-flutter) &nbsp;·&nbsp;
+[📄 Documentation](./docs/) &nbsp;·&nbsp;
 [⚙️ Firmware](./firmware/fogponic_progam/)
 
 </div>
 
 ---
 
-## 📖 Tentang Proyek
+## 📖 About
 
-**i-Fogponic** adalah sistem aeroponik pintar (*smart indoor aeroponics*) yang memanfaatkan teknologi kabut (fog/mist) untuk menumbuhkan tanaman tanpa tanah di dalam ruangan. Sistem ini mengintegrasikan mikrokontroler **ESP32** dengan aplikasi mobile berbasis **Flutter** yang terhubung melalui **Bluetooth Classic**, memungkinkan pengguna memantau kondisi lingkungan dan mengontrol perangkat secara real-time maupun otomatis (terjadwal).
+**i-Fogponic** is a smart indoor aeroponics system that utilizes fog/mist technology to grow plants without soil indoors. The system integrates an **ESP32** microcontroller with a **Flutter**-based mobile application connected via **Bluetooth Classic**, allowing users to monitor environmental conditions and control devices in real-time or through automated scheduling.
 
-### ✨ Fitur Utama
+### ✨ Key Features
 
-- 📡 **Monitoring Real-time** — Suhu, kelembapan udara, dan kadar nutrisi (TDS/PPM) terpantau langsung dari smartphone
-- 📈 **Visualisasi Data** — Grafik tren suhu & kelembapan berbasis `fl_chart`
-- ⏱️ **Penjadwalan Otomatis** — Fogger (pembuat kabut) dan grow light dapat dijadwalkan berdasarkan waktu
-- 🕹️ **Mode Manual & Auto** — Fleksibilitas kontrol penuh atau otomatisasi penuh
-- 🌈 **LED RGB Customizable** — Atur warna lampu NeoPixel sesuai kebutuhan
-- 📊 **Statistik Historis** — Data 24 jam, 30 hari, 12 minggu, hingga 12 bulan tersimpan di ESP32
-- ⏰ **RTC DS3231** — Penjadwalan akurat berbasis jam real-time meskipun tanpa koneksi internet
+- 📡 **Real-time Monitoring** — Track temperature, air humidity, and nutrient levels (TDS/PPM) directly from your smartphone
+- 📈 **Data Visualization** — Temperature & humidity trend charts powered by `fl_chart`
+- ⏱️ **Automated Scheduling** — Schedule the fogger (misting) and grow light based on time
+- 🕹️ **Manual & Auto Mode** — Full manual control or complete automation, your choice
+- 🌈 **Customizable RGB LED** — Set the NeoPixel light color to your preference
+- 📊 **Historical Statistics** — Data stored on the ESP32 for 24 hours, 30 days, 12 weeks, and 12 months
+- ⏰ **RTC DS3231** — Accurate time-based scheduling even without an internet connection
 
 ---
 
-## 📁 Struktur Repositori
+## 📁 Repository Structure
 
 ```
 i-Fogponic-Smart_Indoor_Aeroponics_System/
 │
-├── 📄 docs/                          # Dokumentasi proyek
-│   ├── i-Fogponic.docx               # Dokumen pembiayaan proyek
-│   ├── Wiring.pdf                    # Skema rangkaian (PDF)
-│   ├── Wiring.xlsx                   # Skema rangkaian (Excel)
-│   ├── Wiring.csv                    # Skema rangkaian (CSV)
-│   └── WhatsApp Image 2026-03-09...  # Foto dokumentasi hardware
+├── 📄 docs/                          # Project documentation
+│   ├── i-Fogponic.docx               # Main project document
+│   ├── Wiring.pdf                    # Circuit schematic (PDF)
+│   ├── Wiring.xlsx                   # Circuit schematic (Excel)
+│   ├── Wiring.csv                    # Wiring data (CSV)
+│   └── WhatsApp Image 2026-03-09...  # Hardware documentation photo
 │
-├── ⚙️ firmware/fogponic_progam/      # Source code firmware ESP32
-│   ├── fogponic_progam.ino           # File utama Arduino
-│   ├── bluetooth_handler.cpp/.h      # Handler komunikasi Bluetooth
-│   ├── data_structures.h             # Struktur data sistem
-│   └── time_utils.cpp/.h             # Utilitas pengelolaan waktu (RTC)
+├── ⚙️ firmware/fogponic_progam/      # ESP32 firmware source code
+│   ├── fogponic_progam.ino           # Main Arduino sketch
+│   ├── bluetooth_handler.cpp/.h      # Bluetooth communication handler
+│   ├── data_structures.h             # System data structures
+│   └── time_utils.cpp/.h             # RTC time management utilities
 │
-├── 📦 legacy/                        # Versi lama aplikasi (debug APK)
+├── 📦 legacy/                        # Previous app version (debug APK)
 │   └── app-debug (1).apk
 │
-└── 📱 mobile_app/                    # Aplikasi mobile Flutter
-    ├── android/                      # Konfigurasi Android
-    ├── ios/                          # Konfigurasi iOS
-    ├── lib/                          # Source code Dart/Flutter
-    └── assets/images/                # Aset logo aplikasi
+└── 📱 mobile_app/                    # Flutter mobile application
+    ├── android/                      # Android configuration
+    ├── ios/                          # iOS configuration
+    ├── lib/                          # Dart/Flutter source code
+    └── assets/images/                # App image assets
 ```
 
 ---
 
-## 🚀 Rilis Terbaru — v2.0.0 Flutter Edition
+## 🚀 Latest Release — v2.0.0 Flutter Edition
 
-> **[📥 Download di sini](https://github.com/FahriX3/i-Fogponic-Smart_Indoor_Aeroponics_System/releases/tag/v2.0.0-flutter)**
+> **[📥 Download here](https://github.com/FahriX3/i-Fogponic-Smart_Indoor_Aeroponics_System/releases/tag/v2.0.0-flutter)**
 
-Versi ini merupakan pembaruan besar yang memigrasikan seluruh kode aplikasi mobile ke **Flutter**, menghadirkan performa lebih baik dan UI yang lebih modern.
+This release marks a major overhaul that migrates the entire mobile application to **Flutter**, delivering better performance and a modern UI.
 
-### 🆕 Yang Baru di v2.0.0
-- ✅ **Antarmuka Modern** — UI bersih dan minimalis dengan keterbacaan tinggi
-- ✅ **Visualisasi Real-time** — Grafik monitoring suhu & kelembapan dengan `fl_chart`
-- ✅ **Konektivitas Bluetooth Lebih Stabil** — Dioptimasi untuk komunikasi ESP32
-- ✅ **Dukungan Multi-Arsitektur** — Binary native untuk berbagai chipset Android
+### 🆕 What's New in v2.0.0
+- ✅ **Modern Interface** — Clean, minimalist UI designed for high readability
+- ✅ **Real-time Visualization** — Temperature & humidity monitoring charts with `fl_chart`
+- ✅ **Enhanced Bluetooth Connectivity** — Optimized for stable ESP32 communication
+- ✅ **Multi-Architecture Support** — Native binaries for various Android chipsets
 
-### 📦 Pilih APK yang Sesuai
+### 📦 Choose the Right APK
 
-| File APK | Perangkat |
-|----------|-----------|
-| `app-arm64-v8a-release.apk` | ⭐ **Rekomendasi** — Hampir semua smartphone Android modern (2019+) |
-| `app-armeabi-v7a-release.apk` | Perangkat Android lama / 32-bit |
-| `app-x86_64-release.apk` | Emulator Android |
+| APK File | Target Device |
+|----------|---------------|
+| `app-arm64-v8a-release.apk` | ⭐ **Recommended** — Almost all modern Android smartphones (2019+) |
+| `app-armeabi-v7a-release.apk` | Older / 32-bit Android devices |
+| `app-x86_64-release.apk` | Android Emulators |
 
 ---
 
-## 🔧 Skema Wiring & Pin Out ESP32
+## 🔧 Hardware Wiring & ESP32 Pin Out
 
-> Pastikan koneksi sesuai skema sebelum menghidupkan sistem! Lihat juga file lengkapnya di `docs/Wiring.pdf`.
+> Make sure all connections are correct before powering up the system! See the full schematic in `docs/Wiring.pdf`.
 
-### 1. 🌡️ Sensor DHT11 — Suhu & Kelembapan
+### 1. 🌡️ DHT11 Sensor — Temperature & Humidity
 
-| Pin DHT11 | Pin ESP32 |
+| DHT11 Pin | ESP32 Pin |
 |-----------|-----------|
 | Data (OUT) | **GPIO 15** |
 | VCC | 3.3V / 5V |
@@ -101,32 +101,32 @@ Versi ini merupakan pembaruan besar yang memigrasikan seluruh kode aplikasi mobi
 
 ---
 
-### 2. 💧 Sensor TDS — Kualitas Air (Nutrisi)
+### 2. 💧 TDS Sensor — Water Quality (Nutrients)
 
-| Pin TDS | Pin ESP32 |
+| TDS Pin | ESP32 Pin |
 |---------|-----------|
 | Analog OUT | **GPIO 36 (VP)** |
-| VCC | **3.3V** *(disarankan, agar sesuai batas ADC)* |
+| VCC | **3.3V** *(recommended to stay within the ADC voltage limit)* |
 | GND | GND |
 
 ---
 
-### 3. ⚡ Modul Relay — Fogger & Grow Light *(Aktif Low)*
+### 3. ⚡ Relay Module — Fogger & Grow Light *(Active Low)*
 
-| Pin Relay | Pin ESP32 | Fungsi |
-|-----------|-----------|--------|
-| IN 1 | **GPIO 4** | Fogger (Pembuat Kabut) |
+| Relay Pin | ESP32 Pin | Function |
+|-----------|-----------|----------|
+| IN 1 | **GPIO 4** | Fogger (Mist Maker) |
 | IN 2 | **GPIO 5** | Grow Light |
 | VCC | **5V (VIN)** | — |
 | GND | GND | — |
 
-> **Catatan:** Sisi beban (fogger & grow light) dihubungkan melalui terminal **COM** dan **NO** (Normally Open) pada masing-masing relay, memutus salah satu kabel power perangkat.
+> **Note:** The load side (fogger & grow light) is wired through the **COM** and **NO** (Normally Open) terminals of each relay, interrupting one of the power lines of each device.
 
 ---
 
-### 4. 🌈 LED Strip RGB — WS2812B / NeoPixel *(8 LED)*
+### 4. 🌈 RGB LED Strip — WS2812B / NeoPixel *(8 LEDs)*
 
-| Pin NeoPixel | Pin ESP32 |
+| NeoPixel Pin | ESP32 Pin |
 |--------------|-----------|
 | Data IN (DIN) | **GPIO 19** |
 | VCC | **5V (VIN)** |
@@ -134,9 +134,9 @@ Versi ini merupakan pembaruan besar yang memigrasikan seluruh kode aplikasi mobi
 
 ---
 
-### 5. ⏰ Modul RTC DS3231 — Real Time Clock *(I2C)*
+### 5. ⏰ RTC Module DS3231 — Real Time Clock *(I2C)*
 
-| Pin DS3231 | Pin ESP32 |
+| DS3231 Pin | ESP32 Pin |
 |------------|-----------|
 | SDA | **GPIO 21** *(Default I2C)* |
 | SCL | **GPIO 22** *(Default I2C)* |
@@ -145,85 +145,85 @@ Versi ini merupakan pembaruan besar yang memigrasikan seluruh kode aplikasi mobi
 
 ---
 
-## 📡 Protokol Komunikasi Bluetooth
+## 📡 Bluetooth Communication Protocol
 
-Komunikasi antara aplikasi Flutter dan ESP32 menggunakan **Serial UART via Bluetooth Classic**.
+Communication between the Flutter app and ESP32 uses **Serial UART via Bluetooth Classic**.
 
-### Aturan Umum
-- Setiap perintah dari App → ESP32 **WAJIB** diakhiri karakter `\n` (Newline)
-- Protokol bersifat **Case Sensitive** — `SetFOG` ≠ `setfog`
+### General Rules
+- Every command from App → ESP32 **MUST** end with a Newline character `\n`
+- The protocol is **Case Sensitive** — `SetFOG` ≠ `setfog`
 
 ---
 
-### 📤 Input: Aplikasi → ESP32
+### 📤 Input: App → ESP32
 
-#### A. Pengaturan Waktu (RTC)
+#### A. Set RTC Time
 ```
-Format  : SET:tahun,bulan,tanggal,jam,menit,detik
-Contoh  : SET:2026,03,21,19,00,00
-Respon  : RTC:OK  |  RTC:ERR
+Format  : SET:year,month,date,hour,minute,second
+Example : SET:2026,03,21,19,00,00
+Response: RTC:OK  |  RTC:ERR
 ```
 
-#### B. Pengaturan Warna LED RGB
+#### B. Set RGB LED Color
 ```
 Format  : W:red,green,blue
-Contoh  : W:255,100,0       → Warna orange
-Respon  : W:OK  |  W:ERR
+Example : W:255,100,0       → Orange color
+Response: W:OK  |  W:ERR
 ```
 
-#### C. Penjadwalan Fogger (Misting)
+#### C. Schedule Fogger (Misting)
 ```
-Format  : SetFOG:JamMulai-JamSelesai;ON:menit:detik;OFF:menit:detik
-Contoh  : SetFOG:06:00-18:00;ON:01:30;OFF:05:00
-Respon  : SetFOG:OK  |  SetFOG:ERR
-```
-
-#### D. Penjadwalan Grow Light
-```
-Format  : SetGROW:JamMulai-JamSelesai
-Contoh  : SetGROW:05:30-19:00
-Respon  : SetGROW:OK
+Format  : SetFOG:StartTime-EndTime;ON:min:sec;OFF:min:sec
+Example : SetFOG:06:00-18:00;ON:01:30;OFF:05:00
+Response: SetFOG:OK  |  SetFOG:ERR
 ```
 
-#### E. Kontrol Mode & Manual
+#### D. Schedule Grow Light
+```
+Format  : SetGROW:StartTime-EndTime
+Example : SetGROW:05:30-19:00
+Response: SetGROW:OK
+```
 
-| Perintah | Fungsi |
-|----------|--------|
-| `Mode:1` | Aktifkan Mode Otomatis |
-| `Mode:0` | Aktifkan Mode Manual |
+#### E. Mode & Manual Control
+
+| Command | Function |
+|---------|----------|
+| `Mode:1` | Enable Auto Mode |
+| `Mode:0` | Enable Manual Mode |
 | `F1` / `F0` | Fogger ON / OFF *(Manual only)* |
 | `G1` / `G0` | Grow Light ON / OFF *(Manual only)* |
-| `L1` / `L0` | LED RGB ON / OFF *(Manual only)* |
+| `L1` / `L0` | RGB LED ON / OFF *(Manual only)* |
 
-> ⚠️ Perintah `F` dan `G` akan **ditolak** apabila Mode Auto sedang aktif.
+> ⚠️ Commands `F` and `G` will be **rejected** while Auto Mode is active.
 
-#### F. Request Data Statistik
+#### F. Request Statistics Data
 
-| Perintah | Data yang Diminta |
-|----------|-------------------|
-| `GETSTAT` | Data 24 jam terakhir |
-| `GETDAILY` | Data 30 hari terakhir |
-| `GETWEEK` | Data 12 minggu terakhir |
-| `GETMONTH` | Data 12 bulan terakhir |
-| `DELETALL` | Hapus semua data tersimpan |
+| Command | Data Requested |
+|---------|----------------|
+| `GETSTAT` | Last 24 hours of data |
+| `GETDAILY` | Last 30 days of data |
+| `GETWEEK` | Last 12 weeks of data |
+| `GETMONTH` | Last 12 months of data |
+| `DELETALL` | Delete all stored data |
 
 ---
 
-### 📥 Output: ESP32 → Aplikasi
+### 📥 Output: ESP32 → App
 
-#### A. Data Real-time *(Segmented String)*
-Dikirim otomatis secara berkala untuk update dashboard.
+#### A. Real-time Data *(Segmented String)*
+Sent automatically at regular intervals to update the main dashboard.
 
 ```
 Format:
 H:[Hum];T:[Temp];P:[TDS];F:[0/1];G:[0/1];L:[0/1];MODE:[0/1];TIME:Y,M,D,H,m,s
 
-Contoh:
+Example:
 H:75.2;T:28.5;P:600;F:1;G:0;L:1;MODE:1;TIME:2026,3,21,19,30,0
 ```
 
-#### B. Data Statistik *(JSON Array)*
-Dikirim hanya sebagai respons terhadap perintah `GETSTAT`, `GETDAILY`, dst.
+#### B. Statistics Data *(JSON Array)*
+Sent only in response to `GETSTAT`, `GETDAILY`, etc.
 
 ```json
 [
@@ -232,103 +232,103 @@ Dikirim hanya sebagai respons terhadap perintah `GETSTAT`, `GETDAILY`, dst.
 ]
 ```
 
-#### Keterangan Variabel
+#### Variable Reference
 
-| Variabel | Keterangan | Satuan |
-|----------|------------|--------|
-| `H` / `hum` | Kelembapan udara | % |
-| `T` / `suhu` | Suhu udara | °C |
-| `P` / `tds` | Kandungan nutrisi air | PPM |
-| `F` | Status relay fogger | 1=ON, 0=OFF |
-| `G` | Status relay grow light | 1=ON, 0=OFF |
-| `L` | Status LED RGB | 1=ON, 0=OFF |
+| Variable | Description | Unit |
+|----------|-------------|------|
+| `H` / `hum` | Air humidity | % |
+| `T` / `suhu` | Air temperature | °C |
+| `P` / `tds` | Water nutrient content | PPM |
+| `F` | Fogger relay status | 1=ON, 0=OFF |
+| `G` | Grow light relay status | 1=ON, 0=OFF |
+| `L` | RGB LED status | 1=ON, 0=OFF |
 
 ---
 
-## 🛠️ Cara Memulai
+## 🛠️ Getting Started
 
-### Prasyarat
+### Prerequisites
 
-- **Hardware:** ESP32 DevKit, DHT11, Sensor TDS, Modul Relay 2-channel, WS2812B 8 LED, RTC DS3231
-- **Software Firmware:** Arduino IDE dengan library:
+- **Hardware:** ESP32 DevKit, DHT11, TDS Sensor, 2-channel Relay Module, WS2812B 8 LEDs, RTC DS3231
+- **Firmware Software:** Arduino IDE with the following libraries:
   - `DHT sensor library` — Adafruit
   - `Adafruit NeoPixel`
   - `RTClib` — Adafruit
   - `BluetoothSerial` *(built-in ESP32 Arduino Core)*
-- **Software App:** Flutter SDK (build dari source) atau langsung install APK dari halaman [Releases](https://github.com/FahriX3/i-Fogponic-Smart_Indoor_Aeroponics_System/releases)
+- **Mobile App:** Flutter SDK (to build from source) or install the APK directly from the [Releases](https://github.com/FahriX3/i-Fogponic-Smart_Indoor_Aeroponics_System/releases) page
 
-### Langkah Instalasi
+### Installation Steps
 
-**1. Clone repositori**
+**1. Clone the repository**
 ```bash
 git clone https://github.com/FahriX3/i-Fogponic-Smart_Indoor_Aeroponics_System.git
 cd i-Fogponic-Smart_Indoor_Aeroponics_System
 ```
 
-**2. Upload Firmware ke ESP32**
+**2. Upload Firmware to ESP32**
 ```
-- Buka folder firmware/fogponic_progam/ di Arduino IDE
-- Install semua library yang dibutuhkan via Library Manager
-- Pilih board: ESP32 Dev Module
-- Upload ke ESP32
-```
-
-**3. Install Aplikasi Flutter**
-
-Opsi A — Install APK langsung *(lebih mudah)*:
-```
-Download app-arm64-v8a-release.apk dari halaman Releases
-Install di Android (aktifkan "Install dari sumber tidak dikenal")
+- Open firmware/fogponic_progam/ in Arduino IDE
+- Install all required libraries via the Library Manager
+- Select board: ESP32 Dev Module
+- Upload to the ESP32
 ```
 
-Opsi B — Build dari source:
+**3. Install the Flutter App**
+
+Option A — Install APK directly *(easiest)*:
+```
+Download app-arm64-v8a-release.apk from the Releases page
+Install on Android (enable "Install from unknown sources")
+```
+
+Option B — Build from source:
 ```bash
 cd mobile_app
 flutter pub get
 flutter run
 ```
 
-**4. Rangkai Hardware**
+**4. Wire the Hardware**
 
-Ikuti skema wiring di bagian [Pin Out](#-skema-wiring--pin-out-esp32) di atas atau lihat `docs/Wiring.pdf`
+Follow the wiring guide in the [Pin Out](#-hardware-wiring--esp32-pin-out) section above or refer to `docs/Wiring.pdf`.
 
-**5. Pair Bluetooth & Mulai!**
+**5. Pair Bluetooth & Start!**
 ```
-- Nyalakan ESP32
-- Buka aplikasi → cari perangkat "i-Fogponic"
-- Hubungkan dan mulai monitoring 🌱
+- Power on the ESP32
+- Open the app → search for the "i-Fogponic" Bluetooth device
+- Connect and start monitoring 🌱
 ```
 
 ---
 
-## 📸 Dokumentasi
+## 📸 Documentation
 
-Dokumentasi lengkap tersedia di folder [`docs/`](./docs/):
+Full documentation is available in the [`docs/`](./docs/) folder:
 
-| File | Isi |
-|------|-----|
-| `i-Fogponic.docx` | Dokumen laporan / dokumentasi pendanaan proyek |
-| `Wiring.pdf` | Skema rangkaian hardware (PDF) |
-| `Wiring.xlsx` | Skema rangkaian hardware (Excel) |
-| `Wiring.csv` | Data wiring dalam format CSV |
-
----
-
-## 🤝 Kontribusi
-
-Kontribusi sangat diterima! Silakan buat *issue* atau *pull request* jika kamu punya ide perbaikan atau menemukan bug.
+| File | Contents |
+|------|----------|
+| `i-Fogponic.docx` | Main project report & documentation |
+| `Wiring.pdf` | Hardware circuit schematic (PDF) |
+| `Wiring.xlsx` | Hardware circuit schematic (Excel) |
+| `Wiring.csv` | Wiring data in CSV format |
 
 ---
 
-## 📄 Lisensi
+## 🤝 Contributing
 
-Proyek ini dilisensikan di bawah [MIT License](LICENSE).
+Contributions are welcome! Feel free to open an *issue* or submit a *pull request* if you have ideas for improvements or found a bug.
+
+---
+
+## 📄 License
+
+This project is licensed under the [MIT License](LICENSE).
 
 ---
 
 <div align="center">
 
-Dibuat dengan ❤️ oleh **Fahri Azzam Mandriva**
+Made with ❤️ by **Fahri Azzam Mandriva**
 
 *Happy Growing! 🌿*
 
