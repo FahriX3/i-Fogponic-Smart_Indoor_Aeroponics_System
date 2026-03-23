@@ -42,8 +42,8 @@ i-Fogponic-Smart_Indoor_Aeroponics_System/
 │
 ├── 📄 docs/                          # Project documentation
 │   ├── i-Fogponic.docx               # Main project document
-│   ├── Wiring.pdf                    # Circuit schematic (PDF)
-│   ├── Wiring.xlsx                   # Circuit schematic (Excel)
+│   ├── Wiring.pdf                    # Wiring (PDF)
+│   ├── Wiring.xlsx                   # Wiring Pin Out (Excel)
 │   ├── Wiring.csv                    # Wiring data (CSV)
 │   └── WhatsApp Image 2026-03-09...  # Hardware documentation photo
 │
