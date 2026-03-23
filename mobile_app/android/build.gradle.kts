@@ -24,11 +24,11 @@ tasks.register<Delete>("clean") {
 }
 
 subprojects {
-    // Mengatur konfigurasi tanpa menunggu afterEvaluate
-    plugins.withId("com.android.library") {
-        val extension = project.extensions.getByType<com.android.build.gradle.LibraryExtension>()
-        if (project.name == "flutter_bluetooth_serial") {
-            extension.namespace = "io.github.edufolly.flutterbluetoothserial"
+    project.configurations.all {
+        resolutionStrategy.eachDependency {
+            if (requested.group == "com.android.support" && !requested.name.startsWith("multidex")) {
+                useVersion("28.0.0")
+            }
         }
     }
 }

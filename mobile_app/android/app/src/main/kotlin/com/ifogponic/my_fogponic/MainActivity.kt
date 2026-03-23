@@ -1,4 +1,4 @@
-package com.example.my_fogponic
+package com.ifogponic.my_fogponic
 
 import io.flutter.embedding.android.FlutterActivity
 
